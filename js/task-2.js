@@ -1,5 +1,5 @@
 class Storage {
-  #items = {};
+  #items = [];
   constructor(items) {
     this.#items = items;
   }
@@ -14,7 +14,7 @@ class Storage {
   }
 
   removeItem(itemToRemove) {
-    return this.#items = this.#items.filter(item => item != itemToRemove);
+    this.#items = this.#items.filter(item => item !== itemToRemove);
   }
 }
 

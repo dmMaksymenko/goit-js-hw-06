@@ -1,5 +1,5 @@
 class StringBuilder{
-  #value = {};
+  #value = '';
   constructor(initialValue) {
     this.#value = [initialValue];
   }
@@ -10,18 +10,15 @@ class StringBuilder{
 
   padEnd(str) {
     this.#value.push(str);
-    return this;
   }
 
   padStart(str) {
     this.#value.unshift(str);
-    return this;
   }
 
   padBoth(str) {
     this.#value.push(str);
     this.#value.unshift(str);
-    return this;
   }
 }
 
